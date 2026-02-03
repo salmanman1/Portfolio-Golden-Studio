@@ -1,0 +1,81 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    /**
+     * FIRESTORE SECURITY RULES - GOLDEN REELS
+     * 
+     * CORE PHILOSOPHY:
+     * This ruleset implements a "Curated Content" security model. Since the application focuses 
+     * on a gallery of curated reels, access is designed for high-availability reading while 
+     * restricting content modification to prevent unauthorized changes to the video library.
+     * 
+     * DATA STRUCTURE:
+     * The database uses a flat, top-level structure to optimize for query performance:
+     * - /videos/{videoId}: The primary content library.
+     * - /categories/{categoryId}: Taxonomic grouping for video discovery.
+     * - /tags/{tagId}: Metadata for filtering and searching content.
+     * 
+     * KEY SECURITY DECISIONS:
+     * 1. Public Read Access: All curated content (videos, categories, tags) is publicly readable.
+     *    This supports both anonymous and authenticated users in exploring the app.
+     * 2. Protected Writes: The current schema for Videos, Categories, and Tags does not include 
+     *    ownership fields (e.g., authorId). Consequently, writes are currently disabled to 
+     *    protect the "curated" nature of the app until an administrative role system is added.
+     * 3. Authorization Independence: Rules avoid costly `get()` or `exists()` lookups by 
+     *    relying on path-based logic and future-proofing for denormalized ownership.
+     */
+
+    // --- HELPER FUNCTIONS ---
+
+    /** @description Checks if the user is authenticated with any provider. */
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    // --- COLLECTION RULES ---
+
+    /**
+     * @description Rules for the curated video library.
+     * @path /videos/{videoId}
+     * @allow Public users (get, list) to view any video document.
+     * @deny Any user (create, update, delete) from modifying the curated video collection.
+     * @principle Public Read with Curated Write Protection.
+     */
+    match /videos/{videoId} {
+      allow get, list: if true;
+      
+      // CRITICAL: Cannot implement owner-only writes. The 'Video' entity is missing an 'ownerId' or 'authorId' field.
+      // Prototyping Note: To allow users to post videos, add an 'authorId' field to the Video schema.
+      allow create, update, delete: if false; // TODO: Add owner or admin validation once the schema is updated.
+    }
+
+    /**
+     * @description Rules for video categories.
+     * @path /categories/{categoryId}
+     * @allow Public users (get, list) to browse categories for navigation.
+     * @deny Any user (create, update, delete) from modifying taxonomy.
+     * @principle Public Read with Curated Write Protection.
+     */
+    match /categories/{categoryId} {
+      allow get, list: if true;
+
+      // CRITICAL: Cannot implement owner-only writes. The 'Category' entity is missing an 'ownerId' or 'authorId' field.
+      allow create, update, delete: if false; // TODO: Add admin validation for category management.
+    }
+
+    /**
+     * @description Rules for video tags.
+     * @path /tags/{tagId}
+     * @allow Public users (get, list) to view tags for filtering.
+     * @deny Any user (create, update, delete) from modifying tags.
+     * @principle Public Read with Curated Write Protection.
+     */
+    match /tags/{tagId} {
+      allow get, list: if true;
+
+      // CRITICAL: Cannot implement owner-only writes. The 'Tag' entity is missing an 'ownerId' or 'authorId' field.
+      allow create, update, delete: if false; // TODO: Add admin validation for tag management.
+    }
+  }
+}

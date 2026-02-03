@@ -1,0 +1,129 @@
+
+{
+  "assets": {
+    "logo": {
+      "id": "main-logo",
+      "imageUrl": "https://drive.google.com/uc?id=1OuCR72YJA33VC0vkp_6URwY1zfLicoPS",
+      "description": "الشعار الرسمي للشركة",
+      "imageHint": "company logo"
+    },
+    "cover": {
+      "id": "cover-photo",
+      "imageUrl": "https://drive.google.com/uc?id=1z7wHVgtPYAPlEtjyUnBJWy4vPNTVe2E7",
+      "description": "صورة غلاف الصفحة الرئيسية",
+      "imageHint": "luxury background"
+    },
+    "profile": {
+      "id": "profile-photo",
+      "imageUrl": "https://drive.google.com/uc?id=1eoPifNNKPJ75S3GNdF8nENqy0vv-aQH_",
+      "description": "الصورة الشخصية أو صورة البراند",
+      "imageHint": "professional profile"
+    }
+  },
+  "videoTemplates": [
+    {
+      "id": "v1",
+      "imageUrl": "https://drive.google.com/uc?id=1jOr9J1tOvLO5qUFE67q6sz_ORYDpgFs0",
+      "videoUrl": "https://drive.google.com/file/d/1SSqG7g0QPTQDmLlKyRuO144OMSQ2nn_A/view?usp=drive_link",
+      "title": {
+        "ar": "مش اي تركيبه اسمها تركيبه - عيادة اسنان",
+        "en": "Not just any mix - Dental Clinic"
+      },
+      "description": {
+        "ar": "عرض مجموعات الملابس الراقية",
+        "en": "Showcasing high-end fashion collections"
+      }
+    },
+    {
+      "id": "v2",
+      "imageUrl": "https://drive.google.com/uc?id=1DmOXiBQ_E04dWeIOg9_wI3HicNv-_xb-",
+      "videoUrl": "https://drive.google.com/file/d/1wtK_CiOB9SRrW938G1MaGCDgq7oXJq0t/view?usp=drive_link",
+      "title": {
+        "ar": "دوام الحال من المحال- عيادة اسنان",
+        "en": "Nothing stays the same - Dental Clinic"
+      },
+      "description": {
+        "ar": "إبراز تفاصيل العقارات والفلل",
+        "en": "Highlighting property and villa details"
+      }
+    },
+    {
+      "id": "v3",
+      "imageUrl": "https://drive.google.com/uc?id=1CwFLZmAKB3HtZt-KZE9Kmrzlq80PpRvh",
+      "videoUrl": "https://drive.google.com/file/d/1mZWvXSD-eWOg4nsyl0KwVcAgsRJNqlu2/view?usp=drive_link",
+      "title": {
+        "ar": "امتى نعمل عملية المراره - مستشفى روفان",
+        "en": "Gallbladder Surgery - Rovan Hospital"
+      },
+      "description": {
+        "ar": "قالب مخصص لمنتجات العناية والجمال",
+        "en": "Custom template for beauty and care products"
+      }
+    },
+    {
+      "id": "v4",
+      "imageUrl": "https://drive.google.com/uc?id=1zXKaTKPYcF8JFgORAeY6mt4lvV9-TKWb",
+      "videoUrl": "https://drive.google.com/file/d/1ue50ZasZ26vesrp7g0982UHX5-ug_xRm/view?usp=drive_link",
+      "title": {
+        "ar": "متوفر بكج كامل مقفل - سيارات",
+        "en": "Full Car Package Promo"
+      },
+      "description": {
+        "ar": "تصوير شهي للأطباق والمأكولات",
+        "en": "Delicious cinematography for dishes and food"
+      }
+    },
+    {
+      "id": "v5",
+      "imageUrl": "https://drive.google.com/uc?id=1gf0dGqfOHQKIlD6Ak5VgTAveYnYcTyT_",
+      "videoUrl": "https://drive.google.com/file/d/19jAbOqMNOLZU8s3yznSwsfSHsGAyLddH/view?usp=drive_link",
+      "title": {
+        "ar": "تريد تتميز تعال الرصين - الرصين المونتال",
+        "en": "Want to stand out? Come to Al-Rasin"
+      },
+      "description": {
+        "ar": "تركيس على التفاصيل والبريق",
+        "en": "Focus on details and brilliance"
+      }
+    },
+    {
+      "id": "v6",
+      "imageUrl": "https://drive.google.com/uc?id=1rNOVxM0I7gR-69FifW47Sgw7f5J2XNHQ",
+      "videoUrl": "https://drive.google.com/file/d/1wtK_CiOB9SRrW938G1MaGCDgq7oXJq0t/view?usp=drive_link",
+      "title": {
+        "ar": "ليش الكل يشتري وحدة سكنية - مجمع الريان السكني",
+        "en": "Why everyone buys a housing unit"
+      },
+      "description": {
+        "ar": "مونتاج حماسي لعرض العقارات السكنية",
+        "en": "Exciting montage for residential real estate displays"
+      }
+    },
+    {
+      "id": "v7",
+      "imageUrl": "https://drive.google.com/uc?id=1t2O6XskBD9Un-ehum8wMPMseKvbS8ddm",
+      "videoUrl": "https://drive.google.com/file/d/1LFU7c3a3ocfcsdReqo2qFhgmeoqnHTmi/view?usp=drive_link",
+      "title": {
+        "ar": "تحديد شوارع ومناطق واراضي درون - تصوير جوي",
+        "en": "Drone street mapping"
+      },
+      "description": {
+        "ar": "قالب مخصص للمؤثرين",
+        "en": "Custom template for influencers"
+      }
+    },
+    {
+      "id": "v8",
+      "imageUrl": "https://drive.google.com/uc?id=1LOT9pQ1BvSiHCKeK-OfnsOfGgngrAlyx",
+      "videoUrl": "https://drive.google.com/file/d/1En_ug0vvHap7sIJRNJQTSvq4lNpNYDgd/view?usp=drive_link",
+      "title": {
+        "ar": "لو محتواك مش بيجيب نتيجة - كولاج",
+        "en": "Content Results - Collage"
+      },
+      "description": {
+        "ar": "توثيق اللحظات الهامة",
+        "en": "Documenting important moments"
+      }
+    }
+  ]
+}

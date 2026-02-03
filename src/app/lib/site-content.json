@@ -1,0 +1,179 @@
+
+{
+  "ui": {
+    "tagline": {
+      "ar": "نبتكر فيديوهات الريلز واليوتيوب مدعومة بأحدث تقنيات الذكاء الاصطناعي",
+      "en": "Creating AI-powered Reels and YouTube videos with professional editing"
+    },
+    "cta_whatsapp": {
+      "ar": "تواصل عبر واتساب",
+      "en": "Contact via WhatsApp"
+    },
+    "ai_badge": {
+      "ar": "مرشح بواسطة AI",
+      "en": "AI RECOMMENDED"
+    },
+    "sections": {
+      "templates": { "ar": "معرض أعمالنا الذكي", "en": "Our Smart Portfolio" },
+      "services": { "ar": "تخصصنا الإبداعي المدعوم بالذكاء", "en": "Our AI-Enhanced Specialty" },
+      "process": { "ar": "رحلة صناعة فيديوهاتك", "en": "How We Create Your Videos" },
+      "stats": { "ar": "جولدن ستوديو في أرقام", "en": "Golden Studio in Numbers" },
+      "reviews": { "ar": "صنّاع محتوى وثقوا بنا", "en": "Creators Who Trust Us" },
+      "pricing": { "ar": "الأسعار والخدمات الذكية", "en": "Smart Services & Pricing" },
+      "faq": { "ar": "الأسئلة الشائعة", "en": "Frequently Asked Questions" },
+      "ready": { "ar": "جاهز لتبدأ مشروعك القادم؟", "en": "Ready for your next project?" }
+    },
+    "footer": {
+      "rights": { "ar": "جولدن ستوديو © 2026 جميع الحقوق محفوظة", "en": "Golden Studio © 2026. All Rights Reserved." },
+      "chat_now": { "ar": "تحدث معنا الآن", "en": "Chat with us" }
+    }
+  },
+  "stats": [
+    { "label": { "ar": "فيديو ريلز", "en": "Reels Produced" }, "value": "1000+" },
+    { "label": { "ar": "قناة يوتيوب", "en": "YouTube Channels" }, "value": "50+" },
+    { "label": { "ar": "ساعات مونتاج", "en": "Editing Hours" }, "value": "2500+" },
+    { "label": { "ar": "سنوات خبرة", "en": "Years Exp" }, "value": "3+" }
+  ],
+  "services": [
+    {
+      "title": { "ar": "مونتاج الريلز الذكي", "en": "Smart Reels Editing" },
+      "desc": { "ar": "نستخدم خوارزميات الذكاء الاصطناعي لاختيار أفضل اللحظات الجاذبة للمشاهد.", "en": "We use AI algorithms to select the most engaging moments for maximum retention." },
+      "icon": "Film"
+    },
+    {
+      "title": { "ar": "تحليل المحتوى بالذكاء", "en": "AI Content Analysis" },
+      "desc": { "ar": "تحليل أداء الفيديوهات وتقديم توصيات ذكية لتحسين الوصول (Reach).", "en": "Analyzing video performance and providing smart recommendations to improve Reach." },
+      "icon": "Zap"
+    },
+    {
+      "title": { "ar": "الموشن جرافيك", "en": "Motion Graphics" },
+      "desc": { "ar": "إضافة نصوص متحركة ومؤثرات بصرية تزيد من تفاعل الجمهور مع فيديوهاتك.", "en": "Adding animated text and visual effects to boost audience engagement with your videos." },
+      "icon": "Sparkles"
+    },
+    {
+      "title": { "ar": "الألوان والصوت", "en": "Color & Audio" },
+      "desc": { "ar": "تصحيح ألوان سينمائي وتنسيق صوتي يجعل المحتوى يظهر بجودة احترافية عالية.", "en": "Cinematic color grading and audio mixing for high-end professional quality." },
+      "icon": "Music"
+    }
+  ],
+  "pricing": [
+    {
+      "name": { "ar": "الريلز الاحترافي", "en": "Professional Reels" },
+      "price": { "ar": "15$ للفيديو الواحد", "en": "$15 per video" },
+      "promo": { "ar": "عروض خاصة لعدد الريلز", "en": "Special bulk discounts" },
+      "ai_optimized": true,
+      "features": {
+        "ar": [
+          "مونتاج سينمائي احترافي يخطف الأنظار",
+          "إضافة نصوص متحركة (Captions) تفاعلية",
+          "هندسة صوتية كاملة ومؤثرات (SFX)",
+          "تصحيح ألوان (Color Grading) سينمائي",
+          "تحرير ذكي للحفاظ على اهتمام المشاهد",
+          "تسليم سريع خلال 24-48 ساعة فقط",
+          "تعديلات محدودة لكل فيديو"
+        ],
+        "en": [
+          "Eye-catching cinematic professional editing",
+          "Interactive animated captions",
+          "Full audio engineering and SFX",
+          "Cinematic color grading",
+          "Smart editing for viewer retention",
+          "Fast delivery within 24-48 hours",
+          "Limited revisions per video"
+        ]
+      },
+      "popular": true
+    },
+    {
+      "name": { "ar": "ريلز الكولاج", "en": "Collage Reels" },
+      "price": { "ar": "تواصل معنا", "en": "Contact Us" },
+      "promo": { "ar": "عروض خاصة لعدد الريلز", "en": "Special bulk discounts" },
+      "features": {
+        "ar": [
+          "مونتاج بأسلوب الكولاج الفني المبتكر",
+          "دمج الصور والفيديوهات بطريقة تفاعلية",
+          "إضافة مؤثرات بصرية وصوتية مخصصة",
+          "تصميم يناسب البراندات الشخصية والمؤثرين",
+          "تحويل الذكريات لتحفة فنية جذابة",
+          "تسليم سريع واحترافي",
+          "تعديلات محدودة لكل فيديو"
+        ],
+        "en": [
+          "Creative collage-style video editing",
+          "Interactive photo and video blending",
+          "Custom visual and sound effects",
+          "Ideal for personal branding and influencers",
+          "Turning memories into artistic masterpieces",
+          "Fast and professional delivery",
+          "Limited revisions per video"
+        ]
+      },
+      "popular": false
+    },
+    {
+      "name": { "ar": "ريلز العقارات", "en": "Real Estate Reels" },
+      "price": { "ar": "تواصل معنا", "en": "Contact Us" },
+      "promo": { "ar": "عروض خاصة لعدد الريلز", "en": "Special bulk discounts" },
+      "features": {
+        "ar": [
+          "تحديد الشوارع والمناطق والأراضي بدقة (درون)",
+          "مونتاج عقاري سينمائي يبرز الفخامة",
+          "إضافة بيانات العقار والموقع بوضوح",
+          "تعديل لقطات الدرون والتصوير الجوي",
+          "موسيقى هادئة وجذابة للمشترين",
+          "إبراز المساحات والإضاءة الطبيعية",
+          "تعديلات محدودة لكل فيديو"
+        ],
+        "en": [
+          "Precision drone mapping (streets, areas, lands)",
+          "Cinematic real estate editing highlighting luxury",
+          "Clear property data and location overlay",
+          "Drone and aerial footage editing",
+          "Atmospheric music attracting buyers",
+          "Highlighting natural lighting and space",
+          "Limited revisions per video"
+        ]
+      },
+      "popular": false
+    }
+  ],
+  "reviews": [
+    {
+      "name": { "ar": "أحمد الشاذلي", "en": "Ahmed El-Shazly" },
+      "company": { "ar": "يوتيوبر تقني", "en": "Tech YouTuber" },
+      "comment": { "ar": "أفضل استوديو تعاملت معه، سرعة واحترافية وفهم عالي للتريندات العالمية بفضل تقنياتهم الذكية.", "en": "Best studio I've worked with. Fast, professional, and trend-savvy thanks to their smart tech." }
+    },
+    {
+      "name": { "ar": "سارة محمود", "en": "Sarah Mahmoud" },
+      "comment": { "ar": "الاحترافية في مونتاج الفيديوهات كانت مذهلة، أنصح بهم بشدة.", "en": "The professionalism in video editing was amazing, highly recommend." },
+      "company": { "ar": "صانعة محتوى", "en": "Creator" }
+    },
+    {
+      "name": { "ar": "ياسين كريم", "en": "Yassin Karim" },
+      "company": { "ar": "مستشار عقاري", "en": "Real Estate Consultant" },
+      "comment": { "ar": "جولدن ستوديو حولوا لقطات العقارات البسيطة لتحفة سينمائية ساعدت في المبيعات.", "en": "Golden Studio turned simple real estate shots into a cinematic masterpiece." }
+    }
+  ],
+  "faqs": [
+    {
+      "q": { "ar": "كم يستغرق تنفيذ فيديو الريل؟", "en": "How long does a reel take?" },
+      "a": { "ar": "عادة ما يستغرق خلال ٢٤ إلى ٤٨ ساعة عمل لضمان أعلى جودة.", "en": "It usually takes 24 to 48 working hours for top quality." }
+    },
+    {
+      "q": { "ar": "كيف أرسل الفيديوهات الخام؟", "en": "How to send raw footage?" },
+      "a": { "ar": "يمكنك إرسالها عبر تلجرام أو رفعها على Google Drive وإرسال الرابط لنا.", "en": "You can send them via Telegram or upload to Google Drive and send us the link." }
+    },
+    {
+      "q": { "ar": "هل يتوفر تعديل (Revision) على الفيديو؟", "en": "Are revisions available?" },
+      "a": { "ar": "نعم، نوفر تعديلات محدودة فقط لكل فيديو لضمان سرعة الإنجاز.", "en": "Yes, we provide limited revisions only per video to ensure efficiency." }
+    },
+    {
+      "q": { "ar": "ما هي طرق الدفع المتاحة؟", "en": "Payment methods?" },
+      "a": { "ar": "نقبل الدفع عبر فودافون كاش، إنستا باي، أو حساب بنكي أو مكتب نحويلات للعملاء خارج مصر.", "en": "We accept Vodafone Cash, InstaPay, Bank Transfer, or remittance offices for international clients." }
+    },
+    {
+      "q": { "ar": "هل استطيع استلام الريلز الخاص بي في نفس اليوم؟", "en": "Can I receive my reels on the same day?" },
+      "a": { "ar": "نعم ولكن سيكون هناك فرق في السعر.", "en": "Yes, but there will be a price difference." }
+    }
+  ]
+}

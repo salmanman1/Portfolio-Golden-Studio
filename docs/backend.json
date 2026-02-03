@@ -1,0 +1,157 @@
+{
+  "entities": {
+    "Video": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "Video",
+      "type": "object",
+      "description": "Represents a video in the Golden Reels application.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the Video entity."
+        },
+        "title": {
+          "type": "string",
+          "description": "The title of the video."
+        },
+        "description": {
+          "type": "string",
+          "description": "A brief description of the video content."
+        },
+        "url": {
+          "type": "string",
+          "description": "The URL where the video can be accessed.",
+          "format": "uri"
+        },
+        "thumbnailUrl": {
+          "type": "string",
+          "description": "The URL of the video's thumbnail image.",
+          "format": "uri"
+        },
+        "categoryId": {
+          "type": "string",
+          "description": "Reference to Category. (Relationship: Category 1:N Video)"
+        },
+        "tagIds": {
+          "type": "array",
+          "description": "References to Tags. (Relationship: Tag N:N Video)",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "id",
+        "title",
+        "description",
+        "url",
+        "thumbnailUrl",
+        "categoryId"
+      ]
+    },
+    "Category": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "Category",
+      "type": "object",
+      "description": "Represents a category of videos in the Golden Reels application.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the Category entity."
+        },
+        "name": {
+          "type": "string",
+          "description": "The name of the category."
+        },
+        "description": {
+          "type": "string",
+          "description": "A description of the category."
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "description"
+      ]
+    },
+    "Tag": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "Tag",
+      "type": "object",
+      "description": "Represents a tag associated with videos in the Golden Reels application.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the Tag entity."
+        },
+        "name": {
+          "type": "string",
+          "description": "The name of the tag."
+        }
+      },
+      "required": [
+        "id",
+        "name"
+      ]
+    }
+  },
+  "auth": {
+    "providers": [
+      "password",
+      "anonymous"
+    ]
+  },
+  "firestore": {
+    "structure": [
+      {
+        "path": "/videos/{videoId}",
+        "definition": {
+          "entityName": "Video",
+          "schema": {
+            "$ref": "#/backend/entities/Video"
+          },
+          "description": "Collection for storing video entities. ",
+          "params": [
+            {
+              "name": "videoId",
+              "description": "Unique identifier for the video."
+            }
+          ]
+        }
+      },
+      {
+        "path": "/categories/{categoryId}",
+        "definition": {
+          "entityName": "Category",
+          "schema": {
+            "$ref": "#/backend/entities/Category"
+          },
+          "description": "Collection for storing video categories.",
+          "params": [
+            {
+              "name": "categoryId",
+              "description": "Unique identifier for the category."
+            }
+          ]
+        }
+      },
+      {
+        "path": "/tags/{tagId}",
+        "definition": {
+          "entityName": "Tag",
+          "schema": {
+            "$ref": "#/backend/entities/Tag"
+          },
+          "description": "Collection for storing tags associated with videos.",
+          "params": [
+            {
+              "name": "tagId",
+              "description": "Unique identifier for the tag."
+            }
+          ]
+        }
+      }
+    ],
+    "reasoning": "The Firestore data structure is designed to support the Golden Reels application, focusing on efficient data retrieval and scalable security rules. The design prioritizes Authorization Independence to ensure robust and debuggable security. Each collection is designed with a homogeneous security posture, streamlining rule creation.\n\n*   `/videos`: Stores video entities. The structure supports listing videos and querying based on `categoryId` and `tagIds`. No explicit ownership is defined as all videos are considered part of the 'curated collection'.\n*   `/categories`: Stores category entities.\n*   `/tags`: Stores tag entities.\n\nThe structure avoids hierarchical authorization dependencies by not relying on `get()` calls in security rules.  This ensures atomic operations and simplifies debugging. Since there are no user-owned resources in this application (all videos are part of curated collection), denormalization of permissions is not needed, and the structure follows simple collection-based storage."
+  }
+}
